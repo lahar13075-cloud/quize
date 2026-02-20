@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Constitution MCQ Practice</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <div id="quiz-header">
+            <div class="info-bar">
+                <span id="q-progress">Question 1/100</span>
+                <div id="timer-display">40:00</div>
+            </div>
+            <div class="progress-bar-container">
+                <div id="progress-fill"></div>
+            </div>
+        </div>
+
+        <div id="question-view">
+            <h2 id="question-text">Loading Questions...</h2>
+            <div id="options-container"></div>
+            
+            <div class="controls">
+                <button id="prev-btn" onclick="changeQuestion(-1)">Previous</button>
+                <button id="next-btn" onclick="changeQuestion(1)">Next</button>
+                <button id="submit-btn" onclick="showResults()" class="hide">Submit Now</button>
+            </div>
+        </div>
+
+        <div id="results-view" class="hide">
+            <h1>Test Results</h1>
+            <div id="score-summary"></div>
+            <div id="review-section"></div>
+            <button onclick="location.reload()" class="restart-btn">Try Again</button>
+        </div>
+    </div>
+
+    <script src="questions.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
